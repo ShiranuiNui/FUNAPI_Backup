@@ -39,26 +39,5 @@ namespace FUNAPI.Controllers
             }
             return Ok(entity);
         }
-
-        // POST api/values
-        [HttpPost("{value?}")]
-        public IActionResult Post([FromBody] object value)
-        {
-            return StatusCode(405);
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id?}")]
-        public IActionResult Put([FromBody] string value)
-        {
-            return StatusCode(405);
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id?}")]
-        public IActionResult Delete(int id)
-        {
-            return StatusCode(405);
-        }
     }
 }

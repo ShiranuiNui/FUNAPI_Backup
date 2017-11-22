@@ -44,6 +44,7 @@ namespace FUNAPI
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
         }
     }
