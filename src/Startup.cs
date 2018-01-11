@@ -7,6 +7,8 @@ using FUNAPI.Database;
 using FUNAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -21,7 +23,9 @@ namespace FUNAPI
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -29,7 +33,12 @@ namespace FUNAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<LecturesContext>();
+            if (Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
+            {
+                throw new ArgumentNullException("CONNECTIONSTRING is Null");
+            }
+            services.AddLogging();
+            services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
             services.AddScoped<ILectureRepository, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
@@ -37,12 +46,13 @@ namespace FUNAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, LecturesContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, LecturesContext context)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            loggerFactory.AddConsole();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
