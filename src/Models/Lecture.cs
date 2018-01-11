@@ -9,12 +9,19 @@ namespace FUNAPI.Models
     {
         [JsonProperty(Order = 0)]
         public int LectureId { get; set; }
+
         [JsonProperty(Order = 1)]
         public string disp_lecture　 { get; set; }
+
         [JsonProperty(Order = 2)]
-        public int week { get; set; }
+        public string must { get; set; }
+
         [JsonProperty(Order = 3)]
+        public int week { get; set; }
+
+        [JsonProperty(Order = 4)]
         public int jigen { get; set; }
+
         [JsonIgnore]
         public virtual List<LectureTeacher> LectureTeachers { get; set; } = new List<LectureTeacher>();
         [JsonIgnore]
@@ -27,18 +34,20 @@ namespace FUNAPI.Models
     }
     public class LectureJson : Lecture
     {
-
         [JsonProperty(Order = 4)]
         public IEnumerable<int> teachers { get; private set; }
-            [JsonProperty(Order = 5)]
+
+        [JsonProperty(Order = 5)]
         public IEnumerable<int> rooms { get; private set; }
-            [JsonProperty(Order = 6)]
+
+        [JsonProperty(Order = 6)]
         public IEnumerable<int> classes { get; private set; }
 
         public LectureJson(Lecture querydata)
         {
             this.LectureId = querydata.LectureId;
             this.disp_lecture = querydata.disp_lecture;
+            this.must = querydata.must;
             this.week = querydata.week;
             this.jigen = querydata.jigen;
             this.teachers = querydata.LectureTeachers.Select(x => x.TeacherId);

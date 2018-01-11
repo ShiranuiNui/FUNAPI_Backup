@@ -49,11 +49,5 @@ namespace FUNAPI.Context
                 .WithMany(x => x.LectureClasses)
                 .HasForeignKey(x => x.ClassId);
         }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            string cs = System.Environment.GetEnvironmentVariable("DB_CONNECTIONSTRING");
-            optionsBuilder.UseMySql(cs);
-        }
     }
-
 }
