@@ -1,0 +1,2421 @@
+[
+  {
+    "CourseName": "線形代数学Ⅱ",
+    "TargetClass": "1-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "由良"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "電子工学基礎",
+    "TargetClass": "1-ABCDEF",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "藤野"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "香取"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "竹川"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-D",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Smith"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-EF",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "Smith"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "電子工学基礎",
+    "TargetClass": "1-GHIJKL",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "佐藤生"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "白石"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "迎山"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-I",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Bagenda"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "解析学Ⅱ",
+    "TargetClass": "1-EFGH",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "高村"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-GH",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Rivers"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報表現基礎Ⅲ",
+    "TargetClass": "2-E",
+    "Rooms": [
+      "484",
+      "583",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "迎山"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-AB",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Nakamura"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-K",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Vallance"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "和田",
+      "高"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "美馬の"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-KL",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Vallance"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報表現基礎Ⅲ",
+    "TargetClass": "2-Ｆ",
+    "Rooms": [
+      "365",
+      "584",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "原田"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-CD",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Rivers"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "和田",
+      "高"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-EF,3-GHI",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "佐藤生"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報デザイン通論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "原田"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "確率論と情報理論",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "竹之内"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-EF",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "Smith"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報処理演習Ⅰ",
+    "TargetClass": "2-GHIの半分",
+    "Rooms": [
+      "364"
+    ],
+    "Teachers": [
+      "三上"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "力学応用",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "斉藤"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "モデル化と要求開発",
+    "TargetClass": "3-ABCD",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "伊藤恵"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "情報代数と符号理論",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "白勢"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "電気回路",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "藤野"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "物理と情報処理Ⅰ",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "川口"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "微分方程式",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "鈴木昭"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "自律システム特論Ⅱ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "鈴木昭",
+      "角康"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "並列分散処理",
+    "TargetClass": "3-ABCD",
+    "Rooms": [
+      "493",
+      "364"
+    ],
+    "Teachers": [
+      "松原克"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "システムプログラミング",
+    "TargetClass": "3-ABCD",
+    "Rooms": [
+      "493",
+      "364"
+    ],
+    "Teachers": [
+      "松原克"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "メディア情報学特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "佐藤生"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 1
+  },
+  {
+    "CourseName": "解析学Ⅱ",
+    "TargetClass": "1-ABCD",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "香取"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "数学総合演習Ⅱ",
+    "TargetClass": "1-EFGH",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "姜暁",
+      "中村嘉"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "香取"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "竹川"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "鈴木利"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-AB",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Nakamura"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "吉村"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "白石"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "迎山"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "小西俊"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-C",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Smith"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-CD",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Rivers"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "線形代数学Ⅱ",
+    "TargetClass": "1-IJKL",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "中村嘉"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "オペレーションズリサーチ",
+    "TargetClass": "2-ABCDEF",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "佐藤仁"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-G",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Johnson"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "和田",
+      "高"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "美馬の"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-IJ",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "Johnson"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "人工知能基礎",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "大澤"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-GH",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Rivers"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "数学総合演習Ⅱ",
+    "TargetClass": "1-IJKL",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "川口",
+      "高木"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ソフトウェア設計論Ⅰ",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "奥野"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "人工知能とメディア",
+    "TargetClass": "3-ABCDJKL",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "川嶋",
+      "角康之",
+      "角薫",
+      "平田",
+      "村井"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報表現基礎演習Ⅲ",
+    "TargetClass": "2-E",
+    "Rooms": [
+      "484",
+      "583",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "迎山"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-IJ",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "Johnson"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "和田",
+      "高"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-EF,3-GHI",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "佐藤生"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "コンピュータグラフィックス",
+    "TargetClass": "3-EF",
+    "Rooms": [
+      "484"
+    ],
+    "Teachers": [
+      "美馬義"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報表現基礎演習Ⅲ",
+    "TargetClass": "2-Ｆ",
+    "Rooms": [
+      "365",
+      "584",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "原田"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "CommunicationIV",
+    "TargetClass": "2-KL",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Vallance"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ハードウェア設計",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "白勢"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "AIプログラミングI",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "村井"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "複雑系科学演習",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "Riabov",
+      "川口",
+      "香取"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "プロジェクトマネージメント",
+    "TargetClass": "3-ABCDEF",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "奥野"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "コンピュータグラフィックス",
+    "TargetClass": "3-ABCDJKL",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "川嶋"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報処理演習Ⅰ",
+    "TargetClass": "2-GHIの半分",
+    "Rooms": [
+      "364"
+    ],
+    "Teachers": [
+      "三上"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "分散協調システム",
+    "TargetClass": "3-JKL",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "大澤"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報デザイン通論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "E工房"
+    ],
+    "Teachers": [
+      "原田"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ニューロコンピューティング",
+    "TargetClass": "3-GHIJKL",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "斉藤"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "信号処理応用",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "585"
+    ],
+    "Teachers": [
+      "Riabov"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ワークプレイス論",
+    "TargetClass": "3-ABCDEF",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "南部"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "余暇と健康Ⅰ",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "田中和"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "IT・ビジネススキル",
+    "TargetClass": "4-高度ICT",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "大場"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "情報デザイン特論Ⅰ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "484"
+    ],
+    "Teachers": [
+      "柳"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ロボティクス",
+    "TargetClass": "3-JKL",
+    "Rooms": [
+      "R782"
+    ],
+    "Teachers": [
+      "鈴木昭"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "知能システムの歴史と未来",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Frank"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "システム情報科学におけるアカデミックリテラシー",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "Vallance",
+      "中村美"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "数理解析特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "高村"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "ITアーキテクチャ特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "松原克"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "知能メディア特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R782"
+    ],
+    "Teachers": [
+      "平田"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 2
+  },
+  {
+    "CourseName": "数学総合演習Ⅱ",
+    "TargetClass": "1-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "村井",
+      "竹之内"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Nakamura"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-AB",
+    "Rooms": [
+      "365"
+    ],
+    "Teachers": [
+      "香取"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-A",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Nakamura"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "寺沢"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "安井"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "線形代数学Ⅱ",
+    "TargetClass": "1-EFGH",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "寺沢"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Smith"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "鈴木利"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-E",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Ruthven-Stuart"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "Johnson"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "解析学Ⅱ",
+    "TargetClass": "1-IJKL",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "鈴木恵"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "484"
+    ],
+    "Teachers": [
+      "Ruthven-Stuart"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "中村嘉"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "木村"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "Frank"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "柳"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Bagenda"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "システム工学",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "白石"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "365"
+    ],
+    "Teachers": [
+      "白石"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-H",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Johnson"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-IJ",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "小西俊"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Vallance"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "センサ工学",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "塚田"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "認知心理学",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "美馬の",
+      "伊藤精",
+      "花田",
+      "南部",
+      "中田"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報数学",
+    "TargetClass": "1-IJKL",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "佐藤直"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "365"
+    ],
+    "Teachers": [
+      "和田",
+      "高"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "ハードウェア設計",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "長崎"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "経済システム入門",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "川越"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "システムと微分方程式",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "高村"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "センサ工学",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "和田"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "データベース工学",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "新美"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "ソフトウェア設計論Ⅰ",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "奥野"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "インタラクティブシステム特論Ⅱ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "363"
+    ],
+    "Teachers": [
+      "竹川"
+    ],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "塚田"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "形式言語とオートマトン",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "加藤"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "認知心理学",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "美馬の",
+      "伊藤精",
+      "花田",
+      "南部",
+      "中田"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "インタラクティブシステム",
+    "TargetClass": "3-ABCDEFJKL",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "角薫"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "キャリアガイダンス",
+    "TargetClass": "",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [],
+    "WeekNumber": 0,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "応用複雑系特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "川越"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "複雑系科学実験",
+    "TargetClass": "2-GHIの半分",
+    "Rooms": [
+      "585",
+      "E工房"
+    ],
+    "Teachers": [
+      "櫻沢"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "システム数学Ⅰ",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "594"
+    ],
+    "Teachers": [
+      "Riabov"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "データベース工学",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "新美"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "ネットワークセキュリティ",
+    "TargetClass": "3-ABCDEF",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "稲村"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "音声音楽処理",
+    "TargetClass": "3-ABCDEFJKL",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "佐藤仁"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "サービス･マネジメント特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "大場"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "複雑系科学特別セミナーB",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "583"
+    ],
+    "Teachers": [
+      "川越"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "複雑系科学特別セミナーA",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "鈴木恵"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "情報デザイン特論Ⅱ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R782"
+    ],
+    "Teachers": [
+      "姜南"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "組込システム特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "長崎"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "適応システム特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "三上",
+      "高木"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 3
+  },
+  {
+    "CourseName": "認知心理学演習",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "584",
+      "585"
+    ],
+    "Teachers": [
+      "美馬の",
+      "伊藤精",
+      "花田",
+      "南部",
+      "中田"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報数学",
+    "TargetClass": "1-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "寺井"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-B",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Nakamura"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "寺沢"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "365",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "安井"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "キャリアガイダンス",
+    "TargetClass": "",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [],
+    "WeekNumber": 0,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "中村嘉"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "木村"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-F",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Ruthven-Stuart"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報数学",
+    "TargetClass": "1-EFGH",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "高木"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報処理演習Ⅱ",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "塚田"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-J",
+    "Rooms": [
+      "494"
+    ],
+    "Teachers": [
+      "Bagenda"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "Frank"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報表現基礎Ⅰ",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "364",
+      "アトリエ"
+    ],
+    "Teachers": [
+      "柳"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "データベース工学",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "角康"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "高度ICT演習",
+    "TargetClass": "",
+    "Rooms": [
+      "484"
+    ],
+    "Teachers": [],
+    "WeekNumber": 0,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "ユーザ・センタード・デザイン",
+    "TargetClass": "3-E",
+    "Rooms": [
+      "363",
+      "494"
+    ],
+    "Teachers": [
+      "岡本"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "CommunicationII",
+    "TargetClass": "1-L",
+    "Rooms": [
+      "495"
+    ],
+    "Teachers": [
+      "Vallance"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "余暇と健康Ⅱ",
+    "TargetClass": "1-KL",
+    "Rooms": [
+      "体育館"
+    ],
+    "Teachers": [
+      "田中和"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "システム情報科学実習",
+    "TargetClass": "3",
+    "Rooms": [],
+    "Teachers": [
+      "担当教員"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "ユーザ・センタード・デザイン",
+    "TargetClass": "3-F",
+    "Rooms": [
+      "364",
+      "495"
+    ],
+    "Teachers": [
+      "安井"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報デザインⅡ",
+    "TargetClass": "2-E",
+    "Rooms": [
+      "484",
+      "585"
+    ],
+    "Teachers": [
+      "姜南"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "電気回路",
+    "TargetClass": "2-ABCD",
+    "Rooms": [
+      "593"
+    ],
+    "Teachers": [
+      "藤野"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "発達と学習",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "辻"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "オペレーションズリサーチ",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "鈴木恵"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報デザインⅡ",
+    "TargetClass": "2-F",
+    "Rooms": [
+      "365",
+      "584"
+    ],
+    "Teachers": [
+      "柳"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "認知心理学演習",
+    "TargetClass": "2-EFJKL",
+    "Rooms": [
+      "584",
+      "585",
+      "594"
+    ],
+    "Teachers": [
+      "美馬の",
+      "伊藤精",
+      "花田",
+      "南部",
+      "中田"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "認知システム特論Ⅱ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R725"
+    ],
+    "Teachers": [
+      "伊藤精"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報産業論",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [
+      "冨永"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "システム情報科学実習",
+    "TargetClass": "3",
+    "Rooms": [],
+    "Teachers": [
+      "担当教員"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "卒業研究",
+    "TargetClass": "4",
+    "Rooms": [],
+    "Teachers": [
+      "指導教員"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "社会思想の歩み",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "田柳"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "生命情報学",
+    "TargetClass": "2-GHI",
+    "Rooms": [
+      "R791"
+    ],
+    "Teachers": [
+      "佐藤直"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "課題研究Ⅱ",
+    "TargetClass": "M1",
+    "Rooms": [],
+    "Teachers": [
+      "指導教員"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "情報ネットワーク特論Ⅰ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "稲村",
+      "中村嘉"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "カオス・フラクタルⅡ",
+    "TargetClass": "3-GHI",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "斉藤"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "インタラクティブシステム特論Ⅰ",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "迎山"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "卒業研究",
+    "TargetClass": "4",
+    "Rooms": [],
+    "Teachers": [
+      "指導教員"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "オープン技術特論",
+    "TargetClass": "M1,2",
+    "Rooms": [
+      "R781"
+    ],
+    "Teachers": [
+      "奥野"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 4
+  },
+  {
+    "CourseName": "人工知能基礎",
+    "TargetClass": "2-EFGHI",
+    "Rooms": [
+      "595"
+    ],
+    "Teachers": [
+      "Frank"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-EF",
+    "Rooms": [
+      "364"
+    ],
+    "Teachers": [
+      "中村嘉"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-GH",
+    "Rooms": [
+      "364"
+    ],
+    "Teachers": [
+      "Frank"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "プログラミング基礎",
+    "TargetClass": "1-CD",
+    "Rooms": [
+      "365"
+    ],
+    "Teachers": [
+      "寺沢"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "高度ICT演習",
+    "TargetClass": "",
+    "Rooms": [
+      "484"
+    ],
+    "Teachers": [],
+    "WeekNumber": 0,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "人工知能基礎",
+    "TargetClass": "2-JKL",
+    "Rooms": [
+      "493"
+    ],
+    "Teachers": [
+      "松原仁"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "情報デザイン演習Ⅱ",
+    "TargetClass": "2-E",
+    "Rooms": [
+      "484",
+      "585"
+    ],
+    "Teachers": [
+      "姜南"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "現代デザイン論",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [
+      "岡本他"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "システム情報科学実習",
+    "TargetClass": "3",
+    "Rooms": [],
+    "Teachers": [
+      "担当教員"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "ユーザ・センタード・デザイン演習",
+    "TargetClass": "3-E",
+    "Rooms": [
+      "363",
+      "494"
+    ],
+    "Teachers": [
+      "岡本"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "情報デザイン演習Ⅱ",
+    "TargetClass": "2-F",
+    "Rooms": [
+      "365",
+      "584"
+    ],
+    "Teachers": [
+      "柳"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "科学史・科学哲学",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "冨永"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "起業家としての自立",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "飯野"
+    ],
+    "WeekNumber": 4,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "ユーザ・センタード・デザイン演習",
+    "TargetClass": "3-F",
+    "Rooms": [
+      "364",
+      "495"
+    ],
+    "Teachers": [
+      "安井"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "システム情報科学実習",
+    "TargetClass": "3",
+    "Rooms": [],
+    "Teachers": [
+      "担当教員"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "システム情報科学研究",
+    "TargetClass": "M1,2",
+    "Rooms": [],
+    "Teachers": [
+      "指導教員"
+    ],
+    "WeekNumber": 3,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "海の科学",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [
+      "担当教員"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "心理学",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "講堂"
+    ],
+    "Teachers": [
+      "花田",
+      "中田"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "社会と経済の把握",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "田柳"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "環境と産業",
+    "TargetClass": "1～4",
+    "Rooms": [
+      "大講義室"
+    ],
+    "Teachers": [
+      "辻"
+    ],
+    "WeekNumber": 2,
+    "TimeNumber": 5
+  },
+  {
+    "CourseName": "システム情報科学研究",
+    "TargetClass": "M1,2",
+    "Rooms": [],
+    "Teachers": [
+      "指導教員"
+    ],
+    "WeekNumber": 1,
+    "TimeNumber": 5
+  }
+]

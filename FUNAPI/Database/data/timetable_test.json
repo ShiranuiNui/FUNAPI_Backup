@@ -1,0 +1,14 @@
+[
+    {
+        "CourseName": "応用複雑系特論",
+        "TargetClass": "M1,2",
+        "Rooms": [
+            "R781"
+        ],
+        "Teachers": [
+            "川越"
+        ],
+        "WeekNumber": 1,
+        "TimeNumber": 3
+    }
+]
