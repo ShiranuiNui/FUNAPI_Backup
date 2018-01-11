@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FUNAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Produces("application/json")]
     public class LecturesController : Controller
     {
         private ILectureRepository repository;
