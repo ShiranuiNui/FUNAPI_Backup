@@ -51,7 +51,7 @@ namespace FUNAPI.Context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string cs = System.Environment.GetEnvironmentVariable("DB_CONNECTIONSTRING");
+            string cs = System.Environment.GetEnvironmentVariable("FUNSYSDBURL");
             optionsBuilder.UseMySql(cs);
         }
     }
