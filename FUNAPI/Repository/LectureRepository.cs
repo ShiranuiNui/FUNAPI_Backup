@@ -25,6 +25,13 @@ public class LectureRepository : ILectureRepository
     public async Task<LectureJson> GetSingleAsync(int id)
     {
         var joinedEntity = await this.context.Lectures.Include(x => x.LectureRooms).Include(x => x.LectureTeachers).Include(x => x.LectureClasses).SingleOrDefaultAsync(x => x.LectureId == id);
-        return new LectureJson(joinedEntity);
+        if (joinedEntity == null)
+        {
+            return null;
+        }
+        else
+        {
+            return new LectureJson(joinedEntity);
+        }
     }
 }
