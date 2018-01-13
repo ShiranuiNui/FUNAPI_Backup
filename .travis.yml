@@ -1,8 +1,9 @@
 language: csharp
 mono: none
 dotnet: 2.1.4
-script:
+install:
 - dotnet restore
+script:
 - dotnet build ./FUNAPI/
 - dotnet build ./FUNAPI.Tests/
 - dotnet test ./FUNAPI.Tests/
