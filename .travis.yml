@@ -1,0 +1,11 @@
+language: csharp
+mono: none
+dotnet: 2.1.4
+script:
+- dotnet restore
+- dotnet build ./FUNAPI/
+- dotnet build ./FUNAPI.Tests/
+- dotnet test ./FUNAPI.Tests/
+notifications:
+  webhooks:
+    secure: Vaql36A7zwtVm+lFbvYhiXUyeZyfTOBYbcnGjNm3k53C3HY5KIRohwoWu9n65zquHZ8zHh0XaFzXRK1RPAgyBhYceqHTQoP0DKXeauqoI+GRYjC/bHHwIVBaV2imNbc5XeLbeaGEE1dnolmKzn/87qV2mBt/R6+dU/vPyUqb3qCFTA3jwA1xpzXlRijbWz4sbyiURaCJfIntugnOqseHRAM5alkjYEQ34deLhuKr+Pzx8t3z8ktkYMVxJpxmv7C3zaj/+BhpOEfyn14vrZd2RmiDO1TOb2mN/juMlFkwMnt/TNZtN0rUm4HO1K0LyFqrVe6oyLI5iupFGWSrgcB6YyrebUyzhpqj1kk3PYK9usDG5lU4JWObCc0YUwFrFVK1KShbJFHRkmxvqXCv1FHVF4Dpw7QA4kktjhFMeLv4nXaCFH/OlkXpY6imvy8gE6L7zTj3nA4A6SQPe4kMkrLCg1Z0B0VcFA7HY2WioS6IrJ+tz//0eIMn22zfe+ZztsHp2aI9WPQE8m+lY/MGwAE4L9EhpvzWwnX5QM9zEFj8+zQsA2K7qZeWZrFmbRNHXrOcOu8cJjrvaOLn7YmQgncuZ/0oU8gG8SmFW5kOf34HKO9dK7kLz3KQkILZWU9OwGUGFeXgkT7fm9cD7wov7iQy24bflUJ3McNg56c7GwZOSyg=
