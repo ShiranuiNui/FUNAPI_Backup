@@ -39,6 +39,7 @@ namespace FUNAPI
                 throw new ArgumentNullException("CONNECTIONSTRING is Null");
             }
             services.AddLogging();
+            services.AddCors();
             services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
             services.AddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
@@ -54,6 +55,7 @@ namespace FUNAPI
                 app.UseDeveloperExceptionPage();
             }
             loggerFactory.AddConsole();
+            app.UseCors(bulder => bulder.AllowAnyOrigin().WithMethods("GET", "HEAD", "OPTIONS"));
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
