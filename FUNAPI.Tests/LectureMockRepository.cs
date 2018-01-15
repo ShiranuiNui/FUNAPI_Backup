@@ -5,7 +5,7 @@ using FUNAPI.Context;
 using FUNAPI.Models;
 using FUNAPI.Repository;
 
-public class LectureMockRepository : ILectureRepository
+public class LectureMockRepository : IReadOnlyRepository<LectureJson>
 {
     private readonly List<Lecture> context;
     public LectureMockRepository(List<Lecture> _context)
