@@ -10,10 +10,10 @@ namespace FUNAPI.Controllers
 {
     [Route("api/[controller]")]
     [Produces("application/json")]
-    public class LecturesController : Controller
+    public class RoomsController : Controller
     {
-        private IReadOnlyRepository<LectureJson> repository;
-        public LecturesController(IReadOnlyRepository<LectureJson> _repository)
+        private IReadOnlyRepository<Room> repository;
+        public RoomsController(IReadOnlyRepository<Room> _repository)
         {
             this.repository = _repository;
         }

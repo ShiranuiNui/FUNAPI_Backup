@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Database;
+using FUNAPI.Models;
 using FUNAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -39,7 +40,7 @@ namespace FUNAPI
             }
             services.AddLogging();
             services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
-            services.AddScoped<ILectureRepository, LectureRepository>();
+            services.AddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );
