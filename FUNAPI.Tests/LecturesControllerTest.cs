@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FUNAPI.Controllers;
 using FUNAPI.Models;
+using FUNAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
@@ -12,8 +13,8 @@ namespace FUNAPI.Tests
     public class LecturesControllerTest
     {
         private readonly List<Lecture> TestData;
-        private readonly ILectureRepository NomalMockRepository;
-        private readonly ILectureRepository EmptyMockRepository;
+        private readonly IReadOnlyRepository<LectureJson> NomalMockRepository;
+        private readonly IReadOnlyRepository<LectureJson> EmptyMockRepository;
 
         public LecturesControllerTest()
         {
