@@ -34,7 +34,7 @@ namespace FUNAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
+            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "" && Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
             {
                 throw new ArgumentNullException("CONNECTIONSTRING is Null");
             }
