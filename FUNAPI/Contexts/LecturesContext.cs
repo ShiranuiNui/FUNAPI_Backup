@@ -13,7 +13,6 @@ namespace FUNAPI.Context
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Class> Classes { get; set; }
         public DbSet<Lecture> Lectures { get; set; }
-        public LecturesContext(DbContextOptions<LecturesContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<LectureTeacher>()
@@ -50,5 +49,11 @@ namespace FUNAPI.Context
                 .WithMany(x => x.LectureClasses)
                 .HasForeignKey(x => x.ClassId);
         }
+        /*
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            throw new NotImplementedException();
+        }
+        */
     }
 }
