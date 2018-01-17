@@ -40,7 +40,10 @@ namespace FUNAPI
             }
             services.AddLogging();
             services.AddCors();
-            services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
+            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "")
+            {
+                services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
+            }
             services.AddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
