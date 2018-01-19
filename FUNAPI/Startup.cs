@@ -65,6 +65,7 @@ namespace FUNAPI
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
+            Database.DatabaseInitializer.Invoke(context);
         }
     }
 }
