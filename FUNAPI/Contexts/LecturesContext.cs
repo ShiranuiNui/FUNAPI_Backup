@@ -13,6 +13,8 @@ namespace FUNAPI.Context
         public DbSet<Room> Rooms { get; set; }
         public DbSet<Class> Classes { get; set; }
         public DbSet<Lecture> Lectures { get; set; }
+        public LecturesContext() { }
+        public LecturesContext(DbContextOptions<LecturesContext> options) : base(options) { }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<LectureTeacher>()

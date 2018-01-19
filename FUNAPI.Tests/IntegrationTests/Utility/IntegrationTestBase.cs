@@ -1,6 +1,9 @@
 using System;
 using System.Net.Http;
 using FUNAPI;
+using FUNAPI.Context;
+//using FUNAPI.Tests.Integration.Context;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.Extensions.DependencyInjection;
