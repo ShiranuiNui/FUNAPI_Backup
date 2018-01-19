@@ -62,9 +62,9 @@ namespace FUNAPI
             }
             loggerFactory.AddConsole();
             app.UseCors(bulder => bulder.AllowAnyOrigin().WithMethods("GET", "HEAD", "OPTIONS"));
+            app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
-            app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
         }
     }
 }
