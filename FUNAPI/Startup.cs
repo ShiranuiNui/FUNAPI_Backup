@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -36,15 +37,17 @@ namespace FUNAPI
         {
             if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "" && Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
             {
-                throw new ArgumentNullException("CONNECTIONSTRING is Null");
+                //throw new ArgumentNullException("CONNECTIONSTRING is Null");
             }
             services.AddLogging();
             services.AddCors();
+            /*
             if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "")
             {
-                services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
             }
-            services.AddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
+            */
+            services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
+            services.TryAddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );

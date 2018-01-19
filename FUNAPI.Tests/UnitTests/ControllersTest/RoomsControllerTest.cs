@@ -17,8 +17,8 @@ namespace FUNAPI.Tests
         public RoomsControllerTest()
         {
             var random = new Random();
-            TestData.Add(new Room { RoomId = random.Next(0, int.MaxValue), disp_room = $"教室{random.Next()}" });
-            TestData.Add(new Room { RoomId = random.Next(0, int.MaxValue), disp_room = $"教室{random.Next()}" });
+            TestData.Add(new Room { disp_room = $"教室{random.Next()}" });
+            TestData.Add(new Room { disp_room = $"教室{random.Next()}" });
         }
 
         [Fact]

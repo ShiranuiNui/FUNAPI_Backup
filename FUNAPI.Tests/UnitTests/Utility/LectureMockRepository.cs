@@ -23,7 +23,7 @@ namespace FUNAPI.Tests
         {
             return await Task.Run(() =>
             {
-                var joinedEntity = this.context.SingleOrDefault(x => x.LectureId == id);
+                var joinedEntity = this.context.FirstOrDefault(x => x.LectureId == id);
                 if (joinedEntity == null)
                 {
                     return null;

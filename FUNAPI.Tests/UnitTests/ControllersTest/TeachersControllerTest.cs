@@ -17,8 +17,8 @@ namespace FUNAPI.Tests
         public TeachersControllerTest()
         {
             var random = new Random();
-            TestData.Add(new Teacher { TeacherId = random.Next(0, int.MaxValue), disp_teacher = $"教員{random.Next()}" });
-            TestData.Add(new Teacher { TeacherId = random.Next(0, int.MaxValue), disp_teacher = $"教員{random.Next()}" });
+            TestData.Add(new Teacher { disp_teacher = $"教員{random.Next()}" });
+            TestData.Add(new Teacher { disp_teacher = $"教員{random.Next()}" });
         }
 
         [Fact]
