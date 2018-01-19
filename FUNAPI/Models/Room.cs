@@ -6,8 +6,9 @@ namespace FUNAPI.Models
 {
     public class Room : BaseEntity
     {
-        public int RoomId { get; set; }
+        public int RoomId { get; private set; }
         public string disp_room { get; set; }
+
         [JsonIgnore]
         public List<LectureRoom> LectureRooms { get; set; } = new List<LectureRoom>();
         public override string ToString() =>

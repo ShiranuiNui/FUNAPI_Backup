@@ -23,43 +23,41 @@ namespace FUNAPI.Tests
             {
                 new Lecture
                 {
-                    LectureId = random.Next(0, int.MaxValue),
-                    disp_lecture = $"教科{random.Next(0, int.MaxValue)}",
-                    must = "",
-                    week = 0,
-                    jigen = 1,
-                    LectureTeachers = new List<LectureTeacher>
-                    {
-                        new LectureTeacher { TeacherId = random.Next(0, int.MaxValue) }
-                    },
-                    LectureRooms = new List<LectureRoom>
-                    {
-                        new LectureRoom { RoomId = random.Next(0, int.MaxValue) }
-                    },
-                    LectureClasses = new List<LectureClass>
-                    {
-                        new LectureClass { ClassId = 11 }
-                    }
+                disp_lecture = $"教科{random.Next(0, int.MaxValue)}",
+                must = "",
+                week = 0,
+                jigen = 1,
+                LectureTeachers = new List<LectureTeacher>
+                {
+                new LectureTeacher { TeacherId = random.Next(0, int.MaxValue) }
+                },
+                LectureRooms = new List<LectureRoom>
+                {
+                new LectureRoom { RoomId = random.Next(0, int.MaxValue) }
+                },
+                LectureClasses = new List<LectureClass>
+                {
+                new LectureClass { ClassId = 11 }
+                }
                 },
                 new Lecture
                 {
-                    LectureId = random.Next(0, int.MaxValue),
-                    disp_lecture = $"教科{random.Next(0, int.MaxValue)}",
-                    must = "",
-                    week = 2,
-                    jigen = 4,
-                    LectureTeachers = new List<LectureTeacher>
-                    {
-                        new LectureTeacher { TeacherId = random.Next(0, int.MaxValue) }
-                    },
-                    LectureRooms = new List<LectureRoom>
-                    {
-                        new LectureRoom { RoomId = random.Next(0, int.MaxValue) }
-                    },
-                    LectureClasses = new List<LectureClass>
-                    {
-                        new LectureClass { ClassId = 11 }
-                    }
+                disp_lecture = $"教科{random.Next(0, int.MaxValue)}",
+                must = "",
+                week = 2,
+                jigen = 4,
+                LectureTeachers = new List<LectureTeacher>
+                {
+                new LectureTeacher { TeacherId = random.Next(0, int.MaxValue) }
+                },
+                LectureRooms = new List<LectureRoom>
+                {
+                new LectureRoom { RoomId = random.Next(0, int.MaxValue) }
+                },
+                LectureClasses = new List<LectureClass>
+                {
+                new LectureClass { ClassId = 11 }
+                }
                 }
             };
             this.NomalMockRepository = new LectureMockRepository(this.TestData);
