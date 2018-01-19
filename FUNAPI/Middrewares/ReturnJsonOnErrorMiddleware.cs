@@ -16,14 +16,12 @@ namespace FUNAPI.Middlewares
         }
         public async Task Invoke(HttpContext context)
         {
+            await next(context);
+
             int statuscode = context.Response.StatusCode;
             if (statuscode / 200 != 1)
             {
                 await context.Response.WriteAsync(JsonConvert.SerializeObject(new { code = statuscode, message = ResponseStringDictionary[statuscode] }));
-            }
-            else
-            {
-                await next.Invoke(context);
             }
         }
     }

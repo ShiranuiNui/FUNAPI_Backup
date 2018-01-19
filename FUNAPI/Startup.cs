@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -34,14 +35,19 @@ namespace FUNAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
+            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "" && Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
             {
-                throw new ArgumentNullException("CONNECTIONSTRING is Null");
+                //throw new ArgumentNullException("CONNECTIONSTRING is Null");
             }
             services.AddLogging();
             services.AddCors();
+            /*
+            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "")
+            {
+            }
+            */
             services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
-            services.AddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
+            services.TryAddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );
@@ -56,9 +62,9 @@ namespace FUNAPI
             }
             loggerFactory.AddConsole();
             app.UseCors(bulder => bulder.AllowAnyOrigin().WithMethods("GET", "HEAD", "OPTIONS"));
+            app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
-            app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
         }
     }
 }
