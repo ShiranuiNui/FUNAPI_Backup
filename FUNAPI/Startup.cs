@@ -23,40 +23,35 @@ namespace FUNAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IHostingEnvironment environment)
+        public Startup(IConfiguration configuration)
         {
             var builder = new ConfigurationBuilder()
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
-            hostingEnvironment = environment;
+            this.lectureInMemoryRepository = new LectureInMemoryRepository(Configuration);
+            if (!this.lectureInMemoryRepository.IsReady)
+            {
+                throw new Exception();
+            }
         }
 
         public IConfiguration Configuration { get; }
-        private readonly IHostingEnvironment hostingEnvironment;
+        private readonly LectureInMemoryRepository lectureInMemoryRepository;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "" && Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
-            {
-                //throw new ArgumentNullException("CONNECTIONSTRING is Null");
-            }
             services.AddLogging();
             services.AddCors();
-            /*
-            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "")
-            {
-            }
-            */
             services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
-            services.TryAddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
+            services.TryAddSingleton<IReadOnlyRepository<LectureJson>>(lectureInMemoryRepository);
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, LecturesContext context)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -67,7 +62,7 @@ namespace FUNAPI
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
-            Database.DatabaseInitializer.Invoke(context, hostingEnvironment);
+            //Database.DatabaseInitializer.Invoke(context, hostingEnvironment);
         }
     }
 }

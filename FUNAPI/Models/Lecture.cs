@@ -8,7 +8,7 @@ namespace FUNAPI.Models
     public class Lecture : BaseEntity
     {
         [JsonProperty(Order = 0)]
-        public int LectureId { get; protected set; }
+        public int LectureId { get; set; }
 
         [JsonProperty(Order = 1)]
         public string disp_lecture　 { get; set; }
