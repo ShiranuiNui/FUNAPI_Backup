@@ -14,7 +14,7 @@ namespace FUNAPI.Tests.Integration.Repository
         public LecturesTestRepository(LecturesContext _context)
         {
             this.context = _context;
-            this.SetData();
+            //this.SetData();
         }
         public async Task<IEnumerable<LectureJson>> GetAllAsync()
         {

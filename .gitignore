@@ -217,4 +217,4 @@ __pycache__/
 Thumbs.db
 
 # FUN Infomation Source
-FUNAPI/Database/data/
+MainData/

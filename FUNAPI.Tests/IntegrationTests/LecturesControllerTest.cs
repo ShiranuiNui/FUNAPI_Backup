@@ -36,7 +36,7 @@ namespace FUNAPI.Tests.Integration
         public async Task ExistData_GetAll_200()
         {
             var response = await this.Client.GetAsync("api/lectures/");
-
+            
             Assert.Equal(HttpStatusCode.OK, response.StatusCode);
             var responseString = await response.Content.ReadAsStringAsync();
             var responseModel = JsonConvert.DeserializeObject<List<LectureJson>>(responseString);

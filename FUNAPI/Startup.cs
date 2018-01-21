@@ -23,14 +23,16 @@ namespace FUNAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             var builder = new ConfigurationBuilder()
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            hostingEnvironment = environment;
         }
 
         public IConfiguration Configuration { get; }
+        private readonly IHostingEnvironment hostingEnvironment;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -65,7 +67,7 @@ namespace FUNAPI
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
-            Database.DatabaseInitializer.Invoke(context);
+            Database.DatabaseInitializer.Invoke(context, hostingEnvironment);
         }
     }
 }
