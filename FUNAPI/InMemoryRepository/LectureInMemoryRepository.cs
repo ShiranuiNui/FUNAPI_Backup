@@ -31,13 +31,12 @@ namespace FUNAPI.Repository
         }
         private bool Initialize(string tsvPath)
         {
-            var lectures = File.ReadAllLines(tsvPath + "/Lectures.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => new Lecture() { disp_lecture = x[2], week = int.Parse(x[4]), jigen = int.Parse(x[5]) }).ToList();
+            var lectures = File.ReadAllLines(tsvPath + "/Lectures.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => new Lecture() { LectureId = int.Parse(x[1]), disp_lecture = x[2], week = int.Parse(x[4]), jigen = int.Parse(x[5]) }).ToList();
             var lectures_rooms = File.ReadAllLines(tsvPath + "/Lectures_Rooms.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Where((data, i) => i % 2 == 1).Select(x => x.Skip(1)).ToList();
             var lectures_teachers = File.ReadAllLines(tsvPath + "/Lectures_Teachers.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Where((data, i) => i % 2 == 1).Select(x => x.Skip(1)).ToList();
             var lectures_classes = File.ReadAllLines(tsvPath + "/Lectures_Classes.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => x.Skip(2)).ToList();
             foreach (var lecture in lectures.Select((data, i) => new { data, i }))
             {
-                lecture.data.LectureId = lecture.i;
                 var rooms = lectures_rooms[lecture.i].Where(x => int.TryParse(x, out int y)).Select(x => int.Parse(x)).ToList();
                 var teachers = lectures_teachers[lecture.i].Where(x => int.TryParse(x, out int y)).Select(x => int.Parse(x)).ToList();
                 var classes = lectures_classes[lecture.i].Where(x => int.TryParse(x, out int y)).Select(x => int.Parse(x)).ToList();
