@@ -29,7 +29,11 @@ namespace FUNAPI
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
             this.lectureInMemoryRepository = new LectureInMemoryRepository(Configuration);
-            if (!this.lectureInMemoryRepository.IsReady)
+            this.classInMemoryRepository = new ClassInMemoryRepository(Configuration);
+            this.roomInMemoryRepository = new RoomInMemoryRepository(Configuration);
+            this.teacherInMemoryRepository = new TeacherInMemoryRepository(Configuration);
+            if (!this.lectureInMemoryRepository.IsReady || !this.classInMemoryRepository.IsReady ||
+                !this.roomInMemoryRepository.IsReady || !this.teacherInMemoryRepository.IsReady)
             {
                 throw new Exception();
             }
@@ -37,14 +41,19 @@ namespace FUNAPI
 
         public IConfiguration Configuration { get; }
         private readonly LectureInMemoryRepository lectureInMemoryRepository;
+        private readonly ClassInMemoryRepository classInMemoryRepository;
+        private readonly RoomInMemoryRepository roomInMemoryRepository;
+        private readonly TeacherInMemoryRepository teacherInMemoryRepository;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddLogging();
             services.AddCors();
-            services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
             services.TryAddSingleton<IReadOnlyRepository<LectureJson>>(lectureInMemoryRepository);
+            services.TryAddSingleton<IReadOnlyRepository<Class>>(classInMemoryRepository);
+            services.TryAddSingleton<IReadOnlyRepository<Room>>(roomInMemoryRepository);
+            services.TryAddSingleton<IReadOnlyRepository<Teacher>>(teacherInMemoryRepository);
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );
