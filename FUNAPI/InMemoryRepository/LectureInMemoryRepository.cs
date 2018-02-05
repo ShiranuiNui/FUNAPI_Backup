@@ -1,34 +1,20 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Models;
 using FUNAPI.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 namespace FUNAPI.Repository
 {
-    public class LectureInMemoryRepository : IReadOnlyRepository<LectureJson>
+    public class LectureInMemoryRepository : SuperInMemoryRepository, IReadOnlyRepository<LectureJson>
     {
         private List<Lecture> context { get; set; } = new List<Lecture>();
-        public bool IsReady { get; set; } = false;
         //TODO:FIX PERFORMANCE
-        public LectureInMemoryRepository(IHostingEnvironment environment)
-        {
-            string tsvPath = environment.ContentRootPath.Substring(0, environment.ContentRootPath.IndexOf("/FUNAPI_Backup/") + 15) + "MainData/";
-            this.IsReady = this.Initialize(tsvPath);
-        }
-        public LectureInMemoryRepository(IConfiguration configuration)
-        {
-            string tsvPath = configuration.GetValue<string>("TSVPATH");
-            if (string.IsNullOrEmpty(tsvPath))
-            {
-                throw new ArgumentNullException("TSVPATH IS EMPTY");
-            }
-            this.IsReady = this.Initialize(tsvPath);
-        }
+        public LectureInMemoryRepository(IConfiguration configuration) : base(configuration) { }
         private bool Initialize(string tsvPath)
         {
             var lectures = File.ReadAllLines(tsvPath + "/Lectures.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => new Lecture() { LectureId = int.Parse(x[1]), disp_lecture = x[2], week = int.Parse(x[4]), jigen = int.Parse(x[5]) }).ToList();

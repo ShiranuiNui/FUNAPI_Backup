@@ -1,11 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Models;
 using FUNAPI.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 namespace FUNAPI.Tests.Integration.Repository
 {
     public class LecturesTestRepository : IReadOnlyRepository<LectureJson>
@@ -14,7 +14,7 @@ namespace FUNAPI.Tests.Integration.Repository
         public LecturesTestRepository(LecturesContext _context)
         {
             this.context = _context;
-            //this.SetData();
+            this.SetData();
         }
         public async Task<IEnumerable<LectureJson>> GetAllAsync()
         {

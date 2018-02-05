@@ -1,33 +1,19 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Models;
 using FUNAPI.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Threading.Tasks;
 namespace FUNAPI.Repository
 {
-    public class TeacherInMemoryRepository : IReadOnlyRepository<Teacher>
+    public class TeacherInMemoryRepository : SuperInMemoryRepository, IReadOnlyRepository<Teacher>
     {
         private List<Teacher> context { get; set; } = new List<Teacher>();
-        public bool IsReady { get; set; } = false;
-        public TeacherInMemoryRepository(IHostingEnvironment environment)
-        {
-            string tsvPath = environment.ContentRootPath.Substring(0, environment.ContentRootPath.IndexOf("/FUNAPI_Backup/") + 15) + "MainData/";
-            this.IsReady = this.Initialize(tsvPath);
-        }
-        public TeacherInMemoryRepository(IConfiguration configuration)
-        {
-            string tsvPath = configuration.GetValue<string>("TSVPATH");
-            if (string.IsNullOrEmpty(tsvPath))
-            {
-                throw new ArgumentNullException("TSVPATH IS EMPTY");
-            }
-            this.IsReady = this.Initialize(tsvPath);
-        }
+        public TeacherInMemoryRepository(IConfiguration configuration) : base(configuration) { }
         private bool Initialize(string tsvPath)
         {
             this.context = File.ReadAllLines(tsvPath + "/Teachers.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1)
