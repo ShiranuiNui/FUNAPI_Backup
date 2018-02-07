@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Database;
 using FUNAPI.Models;
@@ -15,9 +18,6 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Pomelo.EntityFrameworkCore.MySql;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace FUNAPI
 {
@@ -49,7 +49,6 @@ namespace FUNAPI
         private readonly ClassInMemoryRepository classInMemoryRepository;
         private readonly RoomInMemoryRepository roomInMemoryRepository;
         private readonly TeacherInMemoryRepository teacherInMemoryRepository;
-
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {

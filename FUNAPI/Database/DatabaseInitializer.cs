@@ -29,7 +29,6 @@ namespace FUNAPI.Database
             //context.Database.Migrate();
             context.Database.EnsureDeleted();
             context.Database.EnsureCreated();
-
             string tsvPath = environment.ContentRootPath.Substring(0, environment.ContentRootPath.IndexOf("/FUNAPI_Backup/") + 15) + "MainData/";
 
             var roomsdata = File.ReadAllLines(tsvPath + "/Rooms.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => new Room() { disp_room = x[2] });
