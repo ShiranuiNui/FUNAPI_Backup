@@ -1,15 +1,19 @@
 using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace FUNAPI.Repository
 {
-    public abstract class SuperInMemoryRepository
+    public abstract class SuperInMemoryRepository<T>
     {
+        protected List<T> context { get; set; } = new List<T>();
         public bool IsReady { get; set; } = false;
-        public SuperInMemoryRepository()
+        public SuperInMemoryRepository(IEnumerable<T> data)
         {
-            throw new NotImplementedException();
+            this.context = data.ToList();
+            this.IsReady = true;
         }
         public SuperInMemoryRepository(IHostingEnvironment environment)
         {
@@ -28,6 +32,6 @@ namespace FUNAPI.Repository
             }
             this.IsReady = this.Initialize(tsvPath);
         }
-        private bool Initialize(string tsvPath) { throw new MethodAccessException(); }
+        protected virtual bool Initialize(string tsvPath) { throw new MethodAccessException(); }
     }
 }
