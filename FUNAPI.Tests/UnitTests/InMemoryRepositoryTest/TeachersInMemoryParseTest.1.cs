@@ -26,8 +26,6 @@ namespace FUNAPI.Tests
         public async Task IntializeTest()
         {
             var mockConfiguration = new ConfigurationBuilder().AddInMemoryCollection(new Dictionary<string, string>() { { "TSVPATH", path } }).Build();
-            //var mockConfiguration = new Mock<IConfiguration>();
-            //mockConfiguration.Setup(x => x.GetValue<string>(It.IsAny<string>())).Returns(path);
 
             var teacherInMemoryRepository = new TeacherInMemoryRepository(mockConfiguration);
 
