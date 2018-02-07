@@ -23,40 +23,53 @@ namespace FUNAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment env)
         {
             var builder = new ConfigurationBuilder()
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+            Environment = env;
+            if (Environment.IsProduction())
+            {
+                this.lectureInMemoryRepository = new LectureInMemoryRepository(Configuration);
+                this.classInMemoryRepository = new ClassInMemoryRepository(Configuration);
+                this.roomInMemoryRepository = new RoomInMemoryRepository(Configuration);
+                this.teacherInMemoryRepository = new TeacherInMemoryRepository(Configuration);
+                if (!this.lectureInMemoryRepository.IsReady || !this.classInMemoryRepository.IsReady ||
+                    !this.roomInMemoryRepository.IsReady || !this.teacherInMemoryRepository.IsReady)
+                {
+                    throw new Exception();
+                }
+            }
         }
 
         public IConfiguration Configuration { get; }
-
+        public IHostingEnvironment Environment { get; }
+        private readonly LectureInMemoryRepository lectureInMemoryRepository;
+        private readonly ClassInMemoryRepository classInMemoryRepository;
+        private readonly RoomInMemoryRepository roomInMemoryRepository;
+        private readonly TeacherInMemoryRepository teacherInMemoryRepository;
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "" && Configuration.GetValue<string>("DB_CONNECTIONSTRING", "") == "")
-            {
-                //throw new ArgumentNullException("CONNECTIONSTRING is Null");
-            }
             services.AddLogging();
             services.AddCors();
-            /*
-            if (Configuration.GetValue<string>("ASPNETCORE_ENVIRONMENT", "") != "")
+            if (Environment.IsProduction())
             {
+                services.TryAddSingleton<IReadOnlyRepository<LectureJson>>(lectureInMemoryRepository);
+                services.TryAddSingleton<IReadOnlyRepository<Class>>(classInMemoryRepository);
+                services.TryAddSingleton<IReadOnlyRepository<Room>>(roomInMemoryRepository);
+                services.TryAddSingleton<IReadOnlyRepository<Teacher>>(teacherInMemoryRepository);
             }
-            */
-            services.AddDbContext<LecturesContext>(options => options.UseMySql(Configuration.GetValue<string>("DB_CONNECTIONSTRING", "")));
-            services.TryAddScoped<IReadOnlyRepository<LectureJson>, LectureRepository>();
             services.AddMvc().AddJsonOptions(options =>
                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore
             );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, LecturesContext context)
+        public void Configure(IApplicationBuilder app, ILoggerFactory loggerFactory)
         {
-            if (env.IsDevelopment())
+            if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -65,6 +78,7 @@ namespace FUNAPI
             app.UseMiddleware<FUNAPI.Middlewares.ReturnJsonOnErrorMiddleware>();
             app.UseMiddleware<FUNAPI.Middlewares.AcceptOnlyGetMiddleware>();
             app.UseMvc();
+            //Database.DatabaseInitializer.Invoke(context, hostingEnvironment);
         }
     }
 }

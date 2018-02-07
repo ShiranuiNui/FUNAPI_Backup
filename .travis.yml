@@ -1,6 +1,8 @@
 language: csharp
 mono: none
 dotnet: 2.1.4
+env:
+- ASPNETCORE_ENVIRONMENT=TESTING
 script:
 - dotnet build ./FUNAPI/
 - dotnet build ./FUNAPI.Tests/

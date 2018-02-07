@@ -6,7 +6,7 @@ namespace FUNAPI.Models
 {
     public class Room : BaseEntity
     {
-        public int RoomId { get; private set; }
+        public int RoomId { get; set; }
         public string disp_room { get; set; }
 
         [JsonIgnore]

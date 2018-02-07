@@ -6,7 +6,7 @@ namespace FUNAPI.Models
 {
     public class Teacher : BaseEntity
     {
-        public int TeacherId { get; private set; }
+        public int TeacherId { get; set; }
         public string disp_teacher { get; set; }
         public string roman_name { get; set; }
         public string position { get; set; }

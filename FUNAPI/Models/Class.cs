@@ -8,6 +8,7 @@ namespace FUNAPI.Models
     {
         public int ClassId { get; set; }
         public string disp_class { get; set; }
+        public int course { get; set; }
 
         [JsonIgnore]
         public List<LectureClass> LectureClasses { get; set; } = new List<LectureClass>();
