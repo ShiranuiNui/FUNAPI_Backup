@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using FUNAPI.Context;
 using FUNAPI.Database;
 using FUNAPI.Models;
@@ -18,6 +15,9 @@ using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Pomelo.EntityFrameworkCore.MySql;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FUNAPI
 {
@@ -31,10 +31,17 @@ namespace FUNAPI
             Environment = env;
             if (Environment.IsProduction())
             {
-                this.lectureInMemoryRepository = new LectureInMemoryRepository(Configuration);
-                this.classInMemoryRepository = new ClassInMemoryRepository(Configuration);
-                this.roomInMemoryRepository = new RoomInMemoryRepository(Configuration);
-                this.teacherInMemoryRepository = new TeacherInMemoryRepository(Configuration);
+                if (!string.IsNullOrEmpty(configuration.GetValue<string>("TSVPATH")))
+                {
+                    this.lectureInMemoryRepository = new LectureInMemoryRepository(Configuration);
+                    this.classInMemoryRepository = new ClassInMemoryRepository(Configuration);
+                    this.roomInMemoryRepository = new RoomInMemoryRepository(Configuration);
+                    this.teacherInMemoryRepository = new TeacherInMemoryRepository(Configuration);
+                }
+                else
+                {
+                    throw new ArgumentNullException("TSVPATH IS EMPTY");
+                }
                 if (!this.lectureInMemoryRepository.IsReady || !this.classInMemoryRepository.IsReady ||
                     !this.roomInMemoryRepository.IsReady || !this.teacherInMemoryRepository.IsReady)
                 {

@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  funsysapi:
+    build: .
+    environment:
+      - TSVPATH=/var/funsysdata
+      - ENABLE_IPV6=true
+      - VIRTUAL_HOST=shiranuisayaka.net
+    volumes:
+      - ./MainData:/var/funsysdata
+networks:
+  default:
+    external:
+      name: proxy_network
