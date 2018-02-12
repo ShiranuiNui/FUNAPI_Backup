@@ -10,12 +10,11 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace FUNAPI.Repository
 {
-    public class LectureInMemoryRepository : SuperInMemoryRepository, IReadOnlyRepository<LectureJson>
+    public class LectureInMemoryRepository : SuperInMemoryRepository<Lecture>, IReadOnlyRepository<LectureJson>
     {
-        private List<Lecture> context { get; set; } = new List<Lecture>();
         //TODO:FIX PERFORMANCE
         public LectureInMemoryRepository(IConfiguration configuration) : base(configuration) { }
-        private bool Initialize(string tsvPath)
+        protected override bool Initialize(string tsvPath)
         {
             var lectures = File.ReadAllLines(tsvPath + "/Lectures.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Select(x => new Lecture() { LectureId = int.Parse(x[1]), disp_lecture = x[2], week = int.Parse(x[4]), jigen = int.Parse(x[5]) }).ToList();
             var lectures_rooms = File.ReadAllLines(tsvPath + "/Lectures_Rooms.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1).Where((data, i) => i % 2 == 1).Select(x => x.Skip(1)).ToList();

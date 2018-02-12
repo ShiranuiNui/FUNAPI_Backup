@@ -10,11 +10,10 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace FUNAPI.Repository
 {
-    public class RoomInMemoryRepository : SuperInMemoryRepository, IReadOnlyRepository<Room>
+    public class RoomInMemoryRepository : SuperInMemoryRepository<Room>, IReadOnlyRepository<Room>
     {
-        private List<Room> context { get; set; } = new List<Room>();
         public RoomInMemoryRepository(IConfiguration configuration) : base(configuration) { }
-        private bool Initialize(string tsvPath)
+        protected override bool Initialize(string tsvPath)
         {
             this.context = File.ReadAllLines(tsvPath + "/Rooms.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1)
                 .Select(x => new Room() { RoomId = int.Parse(x[1]), disp_room = x[2] }).ToList();

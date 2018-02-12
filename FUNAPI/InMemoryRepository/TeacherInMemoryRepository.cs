@@ -10,11 +10,10 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace FUNAPI.Repository
 {
-    public class TeacherInMemoryRepository : SuperInMemoryRepository, IReadOnlyRepository<Teacher>
+    public class TeacherInMemoryRepository : SuperInMemoryRepository<Teacher>, IReadOnlyRepository<Teacher>
     {
-        private List<Teacher> context { get; set; } = new List<Teacher>();
         public TeacherInMemoryRepository(IConfiguration configuration) : base(configuration) { }
-        private bool Initialize(string tsvPath)
+        protected override bool Initialize(string tsvPath)
         {
             this.context = File.ReadAllLines(tsvPath + "/Teachers.tsv").Select(x => x.Split("\t")).SkipWhile(x => x[0] != "BEGIN DATA").Skip(1)
                 .Select(x => new Teacher() { TeacherId = int.Parse(x[1]), disp_teacher = x[2], roman_name = x[3], position = x[4], research_area = x[5], role = x[6] }).ToList();
